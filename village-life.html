@@ -112,7 +112,7 @@
             <ul>
 
                 <li> <a href="index.html">Home</a></li>
-                <li> <a href="about.html">About Me</a></li>
+                <li> <a href="about.html">About</a></li>
                 
                 <li>
                     <a class="active" href="gallery.html">Gallery</a>
@@ -125,7 +125,7 @@
                         <li><a href="village-life.html">Village Life</a></li>
                     </ul>
                 </li>
-                <li> <a href="contact.html">Contact Us</a></li>
+                <li> <a href="contact.html">Contact</a></li>
 
             </ul>
         </nav>
@@ -153,14 +153,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" row gallery" id="lightgallery"  >
-                    
-                                    <a class="col-lg-4 col-md-6 p-3" href="images/on-the-spot/03.png">
-                                        <img src="images/on-the-spot/03.png" class="img-fluid" alt="Komal Dumb" loading="lazy">
-                                    </a>
-                       
-                        
-                        
+                    <div class=" row gallery justify-content-center" id="lightgallery"  >
+                            <a class="col-lg-6 col-md-6 p-3" href="images/bg-remove.png">
+                                <img src="images/bg-remove.png" class="img-fluid" alt="" loading="lazy">
+                            </a>
+                        <!-- <a class="col-lg-4 col-md-6 p-3" href="images/comming-img.jpg">
+                            <img src="images/comming-img.jpg" class="img-fluid" alt="" loading="lazy">
+                        </a> -->
                        
                        
                     </div>
@@ -224,9 +223,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-fullscreen/1.1.0/lg-fullscreen.min.js"></script>
     <script>
-     $(document).ready(function() {
-  $("#lightgallery").lightGallery(); 
-});
+        $(document).ready(function() {
+              $("#lightgallery").lightGallery({
+                  download: false // Disables the download icon
+              }); 
+          });
     </script>
 
 

@@ -4752,13 +4752,19 @@ header>nav>ul>li:not(.mega-menu) li:last-child a {
     }
 
     .lg-actions .lg-next, .lg-actions .lg-prev {
-        top: 75% !important;
+        top: 80% !important;
+    }
+    .lg-actions .lg-next {
+        right: 5px !important;
+    }
+    .lg-actions .lg-prev {
+        left: 5px !important;
     }
 
 }
 @media only screen and (max-width : 476px) {
     .lg-actions .lg-next, .lg-actions .lg-prev {
-        top: 70% !important;
+        top: 80% !important;
     }
 }
 
@@ -4772,4 +4778,14 @@ header>nav>ul>li:not(.mega-menu) li:last-child a {
 } */
 .lg-sub-html, .lg-toolbar {
     background-color: rgb(0 0 0 / 60%);
+}
+.lg-toolbar ,.lg-sub-html  {
+background-color: transparent !important;
+}
+.lg-image {
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+.img-div {
+    position: relative;
 }
